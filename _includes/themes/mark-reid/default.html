@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }} &larr; {{ page.top }}</title>
+   <meta name="author" content="{{ site.author.name }}" />
+
+   <link rel="start" href="{{ HOME_PATH }}" />
+
+	{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}">
+	{% endif %}
+	
+	{% if page.feed %}
+  	<link rel="alternate" type="application/atom+xml" href="{{ page.feed }}" title="RSS feed" />
+	{% endif %}
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="{{ ASSET_PATH }}/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" />
+
+</head>
+<body id="{{ page.section }}">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="{{ HOME_PATH }}">首页</a></li>
+      {% assign pages_list = site.pages %}
+			{% assign group = 'navigation' %}
+			{% include JB/pages_list %}
+    </ul>
+  </div>
+
+  {{ content }}
+  
+<div id="footer" class="span-24"> 
+<span  title="Content licenced under Creative Commons by-nc-sa 3.0">
+<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
+2011-2012 吴 亮 
+</span> 
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/wuliang">GitHub</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="???">Weibo</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.flickr.com/photos/63479529@N03/">Flickr</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.researchgate.net/profile/Wu_Liang3">ResearchGate</a>
+</div>
+  
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript"> 
+	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
+	}
+</script>
+<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+<![endif]-->
+
+  {% include JB/analytics %}
+</body>
+</html>
