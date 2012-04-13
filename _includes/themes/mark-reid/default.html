@@ -24,11 +24,11 @@
    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" />
 
 </head>
+
 <body id="{{ page.section }}">
 <div id="site">
-  
+  <div id="blogpic"></div>
   <div id="header">
-
     <ul class="nav">
       <li><a class="home" href="{{ HOME_PATH }}">首页</a></li>
       {% assign pages_list = site.pages %}
@@ -38,9 +38,7 @@
   </div>
  
   {{ content }}
-     <h1>
-    <img src="/assets/img/blogheader.jpg">    	
-    </h1>
+
 <div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
 <a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 

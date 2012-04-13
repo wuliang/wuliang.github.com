@@ -28,7 +28,7 @@ body {
 }
 
 /* Hack via Joel Spolsky to make image rescaling nicer in IE */
-img { -ms-interpolation-mode:bicubic; }
+img { -ms-interpolation-mode:bicubic; 	}
 
 /* IE6 ignores this and uses default size of 16pt */
 html>body { font-size:16px; }
@@ -38,7 +38,8 @@ a { text-decoration: none; color: #339; }
 a:hover { text-decoration: underline; color: #33f; }
 a.pdf:before { 
 	margin-right: 1em;
-	content: url(/files/css/icon_pdf.gif); }
+/*	content: url(/files/css/icon_pdf.gif); */
+} 
 
 h1,h2,h3,h4 { 
 	line-height:1em; 
@@ -63,6 +64,14 @@ hr {
 }
 
 sup { line-height: 1ex; }
+
+#blogpic {
+	background-image: url(/assets/img/blogheader.jpg);
+	background-size: 100% auto; 	 
+	padding: 3em 3em 3em 3em; */
+       /* top, right, bottom, and left.*/
+	/*border: 1px solid #ccc; */
+}
 
 #site {
 	max-width: 46em;
@@ -480,6 +489,7 @@ p.delicious-extended:before { content: ' — '; }
 	display: block;
 	right: 0;
 }
+
 /* @end */
 
 

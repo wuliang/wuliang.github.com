@@ -173,7 +173,11 @@ ConceptBro
 </div>
 {% endfor %}
 
-
+<div>
+{% for post in site.tags.board limit: 1 %}
+<a href="{{ post.url }}">{{ post.title }}</a></span>
+{% endfor %}
+</div>
 
 <div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
