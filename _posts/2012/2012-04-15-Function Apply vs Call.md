@@ -73,10 +73,4 @@ Obviously, the difference is this: If you want to pass arguments to the
 function **apply() needs an array and call() needs a list of
 arguments**. That's it! Ridiculously hard to remember, I know.
 
-\
-\
-\
-
-\
-\
 
