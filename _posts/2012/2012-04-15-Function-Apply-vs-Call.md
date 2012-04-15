@@ -24,9 +24,7 @@ methods or I can just summarize by writing the following: **apply() and
 call() allow you to specify what****`this`****will refer to inside that
 function**, even when that function is a method on another object. An
 example:
-
-~~~~
-{style="background: #f3f3e6; border: none; padding: 0cm; line-height: 0.47cm; widows: 2; orphans: 2"}
+{% highlight javascript %}
 var someObject = {
     myProperty : 'Foo',
     myMethod : function() {
@@ -40,7 +38,7 @@ var someOtherObject  = {
 };
 someObject.myMethod.call(someOtherObject); // alerts 'Bar'
 someObject.myMethod.apply(someOtherObject); // alerts 'Bar'
-~~~~
+{% endhighlight %}
 
 As you can see, even thought it is `someObject`'s method that is
 executed, call() and apply() allows me to specify that the keyword
@@ -52,8 +50,7 @@ The difference between these methods is in the way you can pass
 arguments to the original function. Let's extend the example to include
 arguments:
 
-~~~~
-{style="background: #f3f3e6; border: none; padding: 0cm; line-height: 0.47cm; widows: 2; orphans: 2"}
+{% highlight javascript %}
 var someObject = {
     myProperty : 'Foo',
     myMethod : function(prefix, postfix) {
@@ -67,7 +64,7 @@ var someOtherObject  = {
 };
 someObject.myMethod.call(someOtherObject, '<', '>'); // alerts '<Bar>'
 someObject.myMethod.apply(someOtherObject, ['<', '>']); // alerts '<Bar>'
-~~~~
+{% endhighlight %}
 
 Obviously, the difference is this: If you want to pass arguments to the
 function **apply() needs an array and call() needs a list of
