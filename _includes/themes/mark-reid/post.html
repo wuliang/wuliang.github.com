@@ -3,7 +3,7 @@
   <h1 class="emphnext">{{ page.title }}</h1>
   <ul class="signature">
     <a class="author" href="{{ HOME_PATH }}">{{ site.author.name }}</a> 
-    <span class="date">{{ page.date | date:"%Y年%m月%d日" }}</span>
+    <span class="date">{{ page.date | date:"%Y-%m-%d" }}</span>
     <span class="location">{{ page.location }}</span>
   </ul>
   <ul class="tag_box inline">
@@ -15,10 +15,10 @@
 
   <ul class="prev-next">
   {% if page.next %}
-    <a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}">下一页 &rarr;</a>
+    <a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}">下一页(Next) &rarr;</a>
   {% endif %}
   {% if page.previous %}
-    <a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; 上一页</a>
+    <a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; 上一页(Prev)</a>
   {% endif %}
   </ul>
 

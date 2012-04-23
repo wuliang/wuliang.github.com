@@ -28,7 +28,7 @@ body {
 }
 
 /* Hack via Joel Spolsky to make image rescaling nicer in IE */
-img { -ms-interpolation-mode:bicubic; 	}
+img { -ms-interpolation-mode:bicubic; width:100%	}
 
 /* IE6 ignores this and uses default size of 16pt */
 html>body { font-size:16px; }
@@ -231,7 +231,7 @@ ul.compact li a {
 	line-height: 1.6em;
 	display: block;
 	margin: 0;
-	width: 50%;
+	width: 60%;
 	text-align: right;
 }
 #header ul li { display: inline; }
@@ -511,6 +511,23 @@ dl.figure dd {
 /* @end */
 
 /* @group Equations */
+
+/* WUL: some trick. I wish never use them.
+div.img
+{
+  margin: 2px;
+ 
+}   
+div.img img
+{
+  display: inline;
+  margin: 3px;
+  border: 1px solid #ffffff;
+ width: 300px;
+}
+div.img a:hover img {border: 1px solid #0000ff;}
+*/
+
 div.maruku-equation { display: block ;text-align: center; }
 div.maruku-equation img.maruku-png { position: relative; top: -0.75em;}
 span.maruku-inline { }

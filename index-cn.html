@@ -4,9 +4,9 @@ layout: null
 <!DOCTYPE html>
 <html>
 <head>
-<title>Wu Liang </title>
-<meta name="author" content="Wu Liang" />
-<meta name="description" content="Wu Liang " />
+<title>吴亮 </title>
+<meta name="author" content="吴亮" />
+<meta name="description" content="吴亮 " />
 <meta name="robots" content="noodp, nydir" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/assets/css/blueprint/screen.css" type="text/assets/css" rel="stylesheet" />
@@ -20,10 +20,10 @@ layout: null
 <div id="header" class="span-24">
 <div id="menu" class="span-15 last">
 <ul>
-<li class="first"><a href="/">Home</a></li>
-<li><a href="/assets/projects">Projects</a></li>
-<li><a href="/blog.html">Blog</a></li>
-<li><a href="/assets/about">Road</a></li>
+<li class="first"><a href="/">首页</a></li>
+<li><a href="/assets/projects">项目</a></li>
+<li><a href="/blog.html">博客</a></li>
+<li><a href="/assets/about">简历</a></li>
 </ul>
 </div>
 <div id="flags">
@@ -32,19 +32,19 @@ layout: null
 </div>
 </div>
 <div id="main" class="span-24">
-<h1 class="h1-5">Wu Liang</h1>
-<p class="large-para">This is my personal page. Thanks to Git, Github, Jekyll, and all the friends.</p>
+<h1 class="h1-5">吴 亮</h1>
+<p class="large-para">本网站是我的个人主页。感谢Git, 感谢Github, 感谢Jekyll, 感谢所有的朋友。</p>
 <div class="prepend-2 append-2 home span-8">
-<a href='/assets/projects'>Projects</a>, inclues a list of projects I devoted to. 
+<a href='/assets/projects'>项目</a>，包含我创建的开源项目的列表。
 </div>
 <div class="prepend-2 append-2 home span-8">
- <a href="/assets/blog">Blog</a>, shares thoughts, techs and life. 
+ <a href="/assets/blog">博客</a>，探讨技术与生活。
 </div>
 <div class="prepend-2 append-2 home span-8">
- <a href="/assets/about">Road</a>, path that led me here 
+ <a href="/assets/about">简历</a>，了解我的发展道路。
 </div>
 <div class="span-24">
-<h2>Recent projects </h2>
+<h2>最近的项目</h2>
 <div class="post-listing project-listing">
 <div class="inner">
 <div class="title">
@@ -53,7 +53,7 @@ RedisBrain
 </a>
 </div>
 <div class='description'>
-<span>RedisBrain use Redis (NoSQL DB) as backend to model some features of brain. I also used this brain model to implement a Chinese Parser.
+<span>以Redis数据库的特点，模拟人脑的记忆功能。基于此实现中文分词和初步解析。
 </span>
 </div>
 <div class="lang">
@@ -72,7 +72,7 @@ CharniakChineseParser
 </a>
 </div>
 <div class='description'>
-<span>Charniak Parser is  the fantastic English parser developed by Eugene Charniak. Can it be a start point to parse Chinese?
+<span>Charniak Parser可说是最好的英语语法解析器，能否利用它来解析中文？
 </span>
 </div>
 <div class="lang">
@@ -90,7 +90,7 @@ Wuthering
 </a>
 </div>
 <div class='description'>
-<span>A daily news fetching program. Its processing starts from a Rss-Gate, which has a group of categories. All data is stored in a database.
+<span>每日新闻一网打尽。从RSSGate到RSS，再到新闻页面。支持断点继传。
 </span>
 </div>
 <div class="lang">
@@ -109,7 +109,9 @@ abcNLP
 </a>
 </div>
 <div class='description'>
-<span>AB-Natural Chinese Languange Processing. Make the expression “Immune 2 Censorship", if we can make the language hard understood to SYSTEM, but not to human.
+<span>AB-Natural Chinese Languange Processing, The movement of C makes it ab-natural.
+新版“会意字”（你懂地）
+苿峲芘、苿峲芼、苿萂芘、炗峲芘、苿峲芭。
 </span>
 </div>
 <div class="lang">
@@ -128,7 +130,7 @@ ConceptBro
 </a>
 </div>
 <div class='description'>
-<span>ConceptBro is a browser for concept network. It may be the fist one in the world that support all schemas of WordNet, WikiNet, and JA-WordNet.
+<span>全球首发的同时支持WordNet,WikiNet的语义网络图形浏览器。方便的GUI界面。
 </span>
 </div>
 <div class="lang">
@@ -142,7 +144,7 @@ ConceptBro
 </div>
 </div>
 <div class="span-24">
-<h2 class>Recent Posts</h2>
+<h2 class>最近的帖子</h2>
 {% for post in site.posts limit: 5 %}
 <div class="post-listing project-listing">
 <div class="inner">
@@ -160,7 +162,7 @@ ConceptBro
 <div class="date">
 <small>
 <li>
-{{ post.date | date:"%Y-%m-%d" }}
+{{ post.date | date:"%Y年%m月%d日" }}
 {% if post.tags %}
 {% assign tags_list = post.tags %}
 {% for tag in post.tags %}
@@ -176,14 +178,14 @@ ConceptBro
 
 <div>
 {% for post in site.tags.board limit: 1 %}
-<a href="{{ post.url }}">Discuss Board</a></span>
+<a href="{{ post.url }}">{{ post.title }}</a></span>
 {% endfor %}
 </div>
 
 <div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
 <a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
-2011-2012 Wu Liang 
+2011-2012 吴 亮 
 </span> 
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/wuliang">GitHub</a>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="???">Weibo</a>
