@@ -1,10 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!-- saved from url=(0022)http://localhost:4000/ -->
-<html lang="en"><head profile="http://dublincore.org/documents/dcq-html/"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en"><head profile="http://dublincore.org/documents/dcq-html/"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
     <title>Wuliang (Resume)</title>
     <link rel="stylesheet" type="text/css" href="wl-resume-en.css">
-
 </script></head>
   <body screen_capture_injected="true">    
       <div class="vcard">
@@ -31,7 +29,7 @@
 <h2>Introduce</h2>
 
 <p class="intro">
-After <em>10+</em> years of R &amp; D experience in IT field , I have gotten an insight on the development and research. I has taken part in developing equipments of various forms, including network equipments, terminal equipments and test equipments, which give me the opportunity to build a more <em>complete body of knowledge</em> in communication industry, to learn and take <em>the best pratices</em> of organization, development, testing and integration methods of R &amp; D area.
+After <em>10+</em> years of R &amp; D experience in IT field , I have gotten an insight on the development and research. I has taken part in developing equipment of various forms, including network equipment, terminal equipment and test equipment, which give me the opportunity to build a more <em>complete body of knowledge</em> in communication industry, to learn and take <em>the best practices</em> of organization, development, testing and integration methods of R &amp; D area.
 </p>
 
 <p class="intro">
@@ -47,8 +45,8 @@ No matter What kind of work I engaged in, I would like to keep a humility and pr
   <li class="skill strong">Software Develop</li>
   <li class="skill strong">Solution Design</li>
   <br>
-  <li class="skill prefer strong">Programing：</li>
-  <li class="skill strong">C</li>
+  <li class="skill prefer strong">Programming：</li>
+  <li class="skill strong">C</li> 
   <li class="skill strong">C++</li>
   <li class="skill strong">Python</li>
   <li class="skill strong">Bash</li>
@@ -101,9 +99,9 @@ My current "research"(<a href="http://www.researchgate.net/profile/Wu_Liang3" cl
   </div>
 
   <div class="column vevent education">
-    <h2>Eduction</h2>
+    <h2>Education</h2>
     <p>CS Master<abbr class="duration">(2.5 years)</abbr> in <a href="http://www.hrbeu.edu.cn/" class="url
-    summary">Haerbin Engineering University</a>. Outstanding during the colledge learning, the honors include "the roll student", "  outstanding student in foreign language learning", "outstanding graduate", and "recommended to postgraduate (without entrance exam)".
+    summary">Haerbin Engineering University</a>. Outstanding during the college learning, the honors include "the roll student", "  outstanding student in foreign language learning", "outstanding graduate", and "recommended to postgraduate (without entrance exam)".
     </p>
   </div>
 </div>
@@ -131,7 +129,7 @@ These modules include: <br>
  + Network Service:  PPPoE, NTP/SNTP, DHCP, IDS/IDP, Radius  <br>
  + L3： NAT(DNAT, PAT, TransNAT);  Routing Protocol(OSPF, RIP) <br>
  + Traffic Control:  <br>
- &nbsp;  &nbsp;  - Portal(comformance with CMCC specification) <br>
+ &nbsp;  &nbsp;  - Portal(conformance with CMCC specification) <br>
  &nbsp;  &nbsp;  - Speed Control (UL/DL, per user, per device, per SSID) <br>
  &nbsp;  &nbsp;  - Filter(IP, Port, Protocol, Content) <br>
  + Data Tunnel: DTLS, IPsec <br>
@@ -139,13 +137,13 @@ These modules include: <br>
 <br>
 Most modules include kernel part and user part, the former is responsible for functional processing, the latter is responsible for configuration and information collection interface. <br>
 The modules I developed include: <br>
-   ● <em>Wireless roting</em>module  <br>
+   ● <em>Wireless routing</em>module  <br>
 - For mesh network, implement a MANET(Mobile Ad-hoc Networks) protocol, which is suitable for the scenes not very sensitive to delay
 <br>
 - For fast moving scenes, design to decrease the delay and bandwidth loss during handover between different AP.<br>
 <br>
    ● DHCP module  <br>
-DHCP module includes three sub-modules: Server, Client and Relay. Both DHCP Server and Relay are VLAN aware，in other words, can have distinct configuration for each VLAN. The DHCP Server support static address binding, online failover backup, IPv4 or IPv6 adress pool， and configurable Options，such as WLAN related  Option 43, 82, 60. <br>
+DHCP module includes three sub-modules: Server, Client and Relay. Both DHCP Server and Relay are VLAN aware，in other words, can have distinct configuration for each VLAN. The DHCP Server support static address binding, online fail-over backup, IPv4 or IPv6 address pool， and configurable Options，such as WLAN related  Option 43, 82, 60. <br>
 <br>
    ● IGMP Snoop module <br>
 To avoid sending unnecessary multicast to switch ports，a IGMP snoop should exist to snoop the status the client of each IGMP group, and only the port existing active user need to forward the multicast. Support IGMP v2.<br>
@@ -154,7 +152,7 @@ To avoid sending unnecessary multicast to switch ports，a IGMP snoop should exi
 A implement of IEEE 802.1s, mapping each VLAN to a certain Instance, each of which maintain its own status of Spanning Tree. This module interacts with Bridge module to set the forwarding status of VLANs on the port. <br>
 <br>
    ● TCP Performance Enhancement module<br>
-The TCP protocol is invented in situation of  wired network,  and its main error-resist mechanism is designed for network congestion. Usually detection of packet loss will trigger the procedure of "Congest Control" with a "Slow-Start", which then will dramatically decrease the rate of date flow. This module monitor the establishment of each TCP connetction, remove the "loss" information, and resend loss packets from its inner buffer. It has several resend policies(such as "fastest", "smooth"). The tests show it is very effective to smooth the data flow in high loss rate environment . It can work in L2 or L3. The main achievement has applied for patent(No. 200810207789.2） <br>
+The TCP protocol is invented in situation of  wired network,  and its main error-resist mechanism is designed for network congestion. Usually detection of packet loss will trigger the procedure of "Congest Control" with a "Slow-Start", which then will dramatically decrease the rate of date flow. This module monitor the establishment of each TCP connection, remove the "loss" information, and resend loss packets from its inner buffer. It has several resend policies(such as "fastest", "smooth"). The tests show it is very effective to smooth the data flow in high loss rate environment . It can work in L2 or L3. The main achievement has applied for patent(No. 200810207789.2） <br>
 <br>
    ● IDS module  <br>
 Support detecting of malformed packet, flood attack, and port scan. The detection types are compliant with Cisco Secure IDS Attack Signatures” (not include the attack above transport layer). <br>
@@ -167,14 +165,14 @@ Porting some modules developed by 3rd party, and writing configuration wrappers.
 <p class="job-description">
 &gt;&gt;&gt; Project job：Metro product manager <br>
    ● Solution for metro line <br>
-- Study the requirements of  wireless communication in metro scene. Subdivide the usecases into "high bandwith application" (CCTV and PIS) and "high reliable application" (CBTC). Give each category its basic solution including the issues most concerned, such as reliability, anti-interference, cost-effeciency.
+- Study the requirements of  wireless communication in metro scene. Subdivide the use cases into "high bandwidth application" (CCTV and PIS) and "high reliable application" (CBTC). Give each category its basic solution including the issues most concerned, such as reliability, anti-interference, cost-efficiency.
  <br>
 - Report  to  the company's chief management and technology board, accept their review. <br>
 - Cooperate with partner company, help to write bid document, especially the technology part. <br>
 <br>
    ● Manage developing process of Metro product <br>
 Integrated all available information, list  detailed functional requirements of hardware and software, set develop WBS(work breakdown structure) of top 2 levels. <br>
-Apply to the company the resources to join the project, track the development process, and keep abreast of the problems occurred. Several trackside base stations and on-board terminals in RailsRadio ™ series have been successfully developed. <br>
+Apply to the company the resources to join the project, track the development process, and keep abreast of the problems occurred. Several track-side base stations and on-board terminals in RailsRadio ™ series have been successfully developed. <br>
 <br>
    ● Metro product promotion <br>
 Research the industry status quo, the competitive landscape, prepare presentation documents, introduce the characteristics of our solution and products  to the potential partners. <br>
@@ -210,7 +208,7 @@ Nanjing Airlync
 </h2>
 
 <p id="printio-experience-intro">
-A 10-15 developers' startups company.
+A 10-15 developers' start-ups company.
 </p>
   
 <ul class="jobs-list vcalendar">  
@@ -230,7 +228,7 @@ The final software is almost identical to the TEMS ™ (by Ericsson) in function
  <h2 class="jobs-list-title vevent">
  Shanghai COSMOBIC
     <span class="dtrange">
-      <span class="dtstart" title="2003-09">Sep, 2003</span>
+      <span class="dtstart" title="2003-09">Sept, 2003</span>
       - 
       <span class="dtend" title="2006-06">June, 2006</span>
     </span>
@@ -246,7 +244,7 @@ R &amp; D job：Senior Engineer，Chief Engineer <br>
 According to modification in Protocol Conformance Specification(usually TS34.123 and TS34.108), modify or create test scripts running on  the Anritsu signaling tester (MD8480A/B/C). This is periodic task for every 3 months. <br>
 <br>
    ● Write scripts of inter-RAT cases <br>
-Since Japan has no GSM network, so all the inter-RAT select / re-select / handvoer testcases are assigned to us. This task make us familiar with radio channel structure, frame structure, and signaling processes of GSM / GPRS / EDGE system. <br>
+Since Japan has no GSM network, so all the inter-RAT select / re-select / handover test cases are assigned to us. This task make us familiar with radio channel structure, frame structure, and signaling processes of GSM / GPRS / EDGE system. <br>
 <br>
   ● Write scripts  HSDPA and HSUPA cases <br>
 We write all the HSDPA and HSUPA related scripts and use Qualcomm's mobile phone and Anritsu signaling tester to verify the correctness of the scripts. This task make us familiar with HSDPA and HSUPA. <br>
@@ -258,7 +256,7 @@ As the primary designer, I implemented  <em> mITRON4.0 </em> interface (common i
 The module according to the configuration profile, such as UDP, UDP-Lite, the IP-Only, included in which header to be compressed header. In this project, I mainly make a overview analysis of the compressible parts of each profile. <br>
 <br>
   ● Training in Japan<br>
-Have OJT (On Job Traning) in Panasonic YRP R &amp; D center for a period of one year. During the training, I have a in-depth understanding of hardware and software architecture of Japanese 3G mobile phone. e.g: <br>
+Have OJT (On Job Training) in Panasonic YRP R &amp; D center for a period of one year. During the training, I have a in-depth understanding of hardware and software architecture of Japanese 3G mobile phone. e.g: <br>
    + SDL-based RRC software design and code generation. <br>
    + TTCN-based RRC software test. <br>
    + A custom SDL OS Integration method, mapping multiple SDL Processes  into one OS task. <br>
@@ -329,7 +327,7 @@ Have OJT (On Job Traning) in Panasonic YRP R &amp; D center for a period of one 
     Investigate, detect and resolve several technical problems, which make quality of the data service in PS domain (144k/384k) boost up swiftly, and then were praised by the debug team. Followed that, we actualized several application service of 3G such as Web Browser, Real Play, NetMeeting, Ftp, etc, all of which have passed the test of many views and checks. In 2001, the number of days on my evection is more than 120. <br>
     <br>
     ● Join in the C3G trial bureau <br>
-   As a technical interface representative of RNC, I joined in the project of C3G trial bureau built cooperatively with a famous company of mobile service provider. And my responsibility is to resolve problem in time, reflect information to the citadel, interacted and associated with representatives of other equipments<br>
+   As a technical interface representative of RNC, I joined in the project of C3G trial bureau built cooperatively with a famous company of mobile service provider. And my responsibility is to resolve problem in time, reflect information to the citadel, interacted and associated with representatives of other equipment.<br>
     <br>
     </p><p># Examination of the Second half year of 2001: S(uper) </p>    
     <p></p>
@@ -337,7 +335,7 @@ Have OJT (On Job Traning) in Panasonic YRP R &amp; D center for a period of one 
   <h2 class="jobs-list-title vevent">
     Being graduate student
     <span class="dtrange">
-      <span class="dtstart" title="1998-09">Sep, 1998</span>
+      <span class="dtstart" title="1998-09">Sept, 1998</span>
       - 
       <span class="dtend" title="2001-03">Mar, 2001</span>
     </span>
@@ -363,12 +361,12 @@ Develop with another guy, with PowerBuilder and SQL Server. The system has the f
 <tbody><tr> <th>Patent No.</th><th>Patent Name</th> </tr>
 <tr> <td>200510110270.9</td><td>A method of dynamic adjustment to the PRACH resource allocation </td> </tr>
 <tr> <td>200710046189.8</td><td>A route propagating method</td> </tr>
-<tr> <td>200710046190.0</td><td>A method to dynamicly broadcast route</td> </tr>
+<tr> <td>200710046190.0</td><td>A method to dynamically broadcast route</td> </tr>
 <tr> <td>200710170715.1</td><td>A fast handover method for wireless mesh network</td></tr>
 <tr> <td>200810038888.2</td><td>Sense and handover method in same frequency coverage</td></tr>
 <tr> <td>200810038889.7</td><td>Reliable multicast system and its control method for wireless network</td></tr>
 <tr> <td>200810207789.2</td><td>An optimized TCP transmission of wireless video</td></tr>
-<tr> <td>200810207792.4</td><td>A method to handover mobile subnet in layer 2</td></tr>
+<tr> <td>200810207792.4</td><td>A method to handover mobile sub-net in layer 2</td></tr>
 <tr> <td>200810207791.X</td><td>A multipath enabled routing method for wireless mesh networks</td></tr>
 <tr> <td>200810207790.5</td><td>A Qos guaranteed mesh routing method</td></tr>
 <tr> <td>200810207787.3</td><td>Using terminal relay to coverage WLAN network blind spot</td></tr>
