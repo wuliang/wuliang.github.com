@@ -7,7 +7,7 @@ tags : [photo, travel]
 Tibet Travel
 ------------------------------------
 
-### This post contains some pictures taken in Tiebet, during the travel in May 2011.
+### This post contains some pictures taken in Tibet, during the travel in May 2011.
 
 ![alternate text](http://farm4.staticflickr.com/3076/5774579711_33999a7708_z.jpg)
 ![alternate text](http://farm4.staticflickr.com/3025/5775118312_83716d56ee_z.jpg)
