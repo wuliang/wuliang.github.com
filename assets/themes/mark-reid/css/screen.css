@@ -148,6 +148,7 @@ blockquote {
 	border-top: 1px solid silver;
 	border-bottom: 1px solid silver;
 }
+
 /* @group Table */
 table.neat {
 	width: 80%;
@@ -312,6 +313,7 @@ p.line { position: relative; margin: 0; }
 p.excerpt { margin: 0; }
 .comments { font-size: smaller; position: absolute; color: silver; right: 0; top: 0; }
 .excerpt { color: black; }
+.username { color: Brown; }
 
 /* @group Signature */
 .signature { 
